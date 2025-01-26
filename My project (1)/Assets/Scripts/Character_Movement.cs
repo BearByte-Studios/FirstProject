@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Collections;
 using JetBrains.Annotations;
 using UnityEngine;
-using Unity.Netcode;
+using Mirror;
 
 public class Character_Movement : NetworkBehaviour
 {
@@ -30,7 +30,7 @@ public class Character_Movement : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(IsOwner)
+        if(isLocalPlayer)
         {
           Controller();
         }
