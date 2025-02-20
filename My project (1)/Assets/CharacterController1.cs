@@ -9,7 +9,7 @@ public class CharacterController1 : MonoBehaviour
 
     [Header("Refs")]
     private CharacterController controller;
-    private Transform camera;
+    
 
     [Header("Movement")]
     public float moveSpeed = 7f;
@@ -20,7 +20,7 @@ public class CharacterController1 : MonoBehaviour
     
     void Start()
     {
-        controller= GetComponent<CharacterController>();
+        controller = GetComponent<CharacterController>();
     }
 
     
