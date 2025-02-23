@@ -13352,6 +13352,83 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4202219827619464, guid: fce9b1051148e514c9d13d4ecfc0741c, type: 3}
   m_PrefabInstance: {fileID: 1324383415}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1365209454
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5199674189154071477, guid: edab7880db68fe745ada8dde69766406, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 75.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 5199674189154071477, guid: edab7880db68fe745ada8dde69766406, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5199674189154071477, guid: edab7880db68fe745ada8dde69766406, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5199674189154071477, guid: edab7880db68fe745ada8dde69766406, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5199674189154071477, guid: edab7880db68fe745ada8dde69766406, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5199674189154071477, guid: edab7880db68fe745ada8dde69766406, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5199674189154071477, guid: edab7880db68fe745ada8dde69766406, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5199674189154071477, guid: edab7880db68fe745ada8dde69766406, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5199674189154071477, guid: edab7880db68fe745ada8dde69766406, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5199674189154071477, guid: edab7880db68fe745ada8dde69766406, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5234598587403719853, guid: edab7880db68fe745ada8dde69766406, type: 3}
+      propertyPath: m_Name
+      value: Character Ragdoll (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6017432721128468655, guid: edab7880db68fe745ada8dde69766406, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 387787026
+      objectReference: {fileID: 0}
+    - target: {fileID: 6017432721128468655, guid: edab7880db68fe745ada8dde69766406, type: 3}
+      propertyPath: InScenePlacedSourceGlobalObjectIdHash
+      value: 1850726675
+      objectReference: {fileID: 0}
+    - target: {fileID: 6197244054353515041, guid: edab7880db68fe745ada8dde69766406, type: 3}
+      propertyPath: sceneId
+      value: 3922643067
+      objectReference: {fileID: 0}
+    - target: {fileID: 8102113903371944185, guid: edab7880db68fe745ada8dde69766406, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 8102113903371944185, guid: edab7880db68fe745ada8dde69766406, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: edab7880db68fe745ada8dde69766406, type: 3}
 --- !u!1001 &1368885422
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20096,3 +20173,4 @@ SceneRoots:
   - {fileID: 1453351720}
   - {fileID: 2110028375}
   - {fileID: 1310103459}
+  - {fileID: 1365209454}

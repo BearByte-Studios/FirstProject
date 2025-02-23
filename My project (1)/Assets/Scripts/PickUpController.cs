@@ -20,11 +20,18 @@ public class PickUpController : MonoBehaviour
     void Update()
     {
         
+        
 
     }
 
 
-     // Checks when the player has a pickable object in front of him
+     // Checks when the player has a pickable object in front of 
+     
+     void PickAndDrop()
+     {
+
+        
+     }
     void OnTriggerStay(Collider other)
     {
         //Uses Input to hold said object
