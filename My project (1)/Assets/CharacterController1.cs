@@ -17,10 +17,15 @@ public class CharacterController1 : MonoBehaviour
     public float turningSpeed = 15f;
 
     private float verticalVelocity;
+
+    [Header("Animation")]
+    public Animator anim;
+
     
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        anim = GetComponent<Animator>();
     }
 
     
@@ -45,6 +50,17 @@ public class CharacterController1 : MonoBehaviour
         move *= moveSpeed;
 
         move.y = GravityForce();
+
+        if (moveInput != 0 || turnInput != 0)
+        {
+            anim.SetBool("isRunning", true);
+            anim.SetBool("isIdle", false);
+        }
+        else
+        {
+            anim.SetBool("isIdle", true);
+            anim.SetBool("isRunning", false);
+        }
 
         controller.Move(move * Time.deltaTime);
 
@@ -83,5 +99,9 @@ public class CharacterController1 : MonoBehaviour
     {
         moveInput = Input.GetAxis("Vertical");
         turnInput = Input.GetAxis("Horizontal");
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            anim.enabled = !anim.enabled;
+        }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using Mirror.BouncyCastle.Asn1.Esf;
+using System;
 
 public class PickUpController : MonoBehaviour 
 {
@@ -12,7 +13,7 @@ public class PickUpController : MonoBehaviour
 
     public Transform HoldPos;
 
-    Vector3 throwForce = new Vector3(0, 0, 4);
+    Vector3 throwForce = new Vector3(0, 0, 100);
 
 
     
@@ -30,7 +31,8 @@ public class PickUpController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.E) && !isEquipped)
         {
             other.GetComponent<Rigidbody>().isKinematic = true;
-            other.GetComponent<Collider>().enabled = false;
+            //other.GetComponent<Collider>().enabled = false;
+            other.GetComponent<Collider>().providesContacts = false;
             other.transform.localPosition = HoldPos.position;
             other.transform.parent = HoldPos.parent;
             isEquipped = true;
@@ -39,15 +41,17 @@ public class PickUpController : MonoBehaviour
 
 
          //Potential Throw Implementation
-        /*if(Input.GetKeyDown(KeyCode.F) && isEquipped)
+        if(Input.GetKeyDown(KeyCode.F) && isEquipped)
         {
+            Debug.Log("Throwing");
+            other.transform.parent = null;
             other.GetComponent<Rigidbody>().isKinematic = false;
-            other.GetComponent<Collider>().enabled = true;
+            //other.GetComponent<Collider>().enabled = true;
+            other.GetComponent<Collider>().providesContacts = true;
             other.GetComponent<Rigidbody>().AddForce(throwForce);
             isEquipped = false;
 
-
-        }*/
+        }
         
         
             
