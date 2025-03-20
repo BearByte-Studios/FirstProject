@@ -1,6 +1,8 @@
 using UnityEngine;
+using Mirror;
 
-public class CharacterController1 : MonoBehaviour
+
+public class CharacterController1 : NetworkAnimator
 {
 
     [Header("Input")]
@@ -31,8 +33,13 @@ public class CharacterController1 : MonoBehaviour
     
     void Update()
     {
-        InputManagement();
-        Movement();
+        //each player moves his own character instead of moving everyone
+        if(isLocalPlayer)
+        {
+          InputManagement();
+          Movement();
+        }
+        
     }
 
     private void Movement()
